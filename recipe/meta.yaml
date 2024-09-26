@@ -17,7 +17,7 @@ build:
     - pypolymlp-utils=pypolymlp.api.run_polymlp_utils:run
     - pypolymlp-structure=pypolymlp.api.run_polymlp_str:run
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
