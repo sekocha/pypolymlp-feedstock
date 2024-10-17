@@ -1,5 +1,5 @@
 {% set name = "pypolymlp" %}
-{% set version = "0.3.11" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pypolymlp-{{ version }}.tar.gz
-  sha256: 50ee93ededd5d1554e9f84f5e316777e1dc52e3de6573371754bf2d9d65560f2
+  sha256: c0c30ce313f501eca52740138b6da722d6d0f922b912d781f71efb474ca838aa
 
 build:
   skip: true  # [py<39 or win]
@@ -17,7 +17,7 @@ build:
     - pypolymlp-utils=pypolymlp.api.run_polymlp_utils:run
     - pypolymlp-structure=pypolymlp.api.run_polymlp_str:run
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
