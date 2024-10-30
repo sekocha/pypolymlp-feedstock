@@ -1,5 +1,5 @@
 {% set name = "pypolymlp" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pypolymlp-{{ version }}.tar.gz
-  sha256: b60f7381e84e100ff117f29d17a479765b7ff4ee6be0999b6f15b9281090cba7
+  sha256: 5bb9c206b87de4709a925f3183475a38ec1eb0fdbf091fcc8ce1b13ce2b74715
 
 build:
   skip: true  # [py<39 or win]
