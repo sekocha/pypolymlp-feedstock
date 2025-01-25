@@ -55,6 +55,8 @@ requirements:
 test:
   imports:
     - pypolymlp
+    - phono3py
+    - symfc
   requires:
     - pip
   commands:
