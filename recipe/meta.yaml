@@ -59,6 +59,8 @@ test:
     - symfc
   requires:
     - pip
+    - phono3py
+    - symfc
   commands:
     - pypolymlp --help
     - pypolymlp-calc --help
