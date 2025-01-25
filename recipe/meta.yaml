@@ -16,6 +16,9 @@ build:
     - pypolymlp-calc=pypolymlp.api.run_polymlp_calc:run
     - pypolymlp-utils=pypolymlp.api.run_polymlp_utils:run
     - pypolymlp-structure=pypolymlp.api.run_polymlp_str:run
+    - pypolymlp-sscha=pypolymlp.api.run_polymlp_sscha:run
+    - pypolymlp-sscha-structure=pypolymlp.api.run_polymlp_sscha_str:run
+    - pypolymlp-sscha-post=pypolymlp.api.run_polymlp_sscha_post:run
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
@@ -48,7 +51,6 @@ requirements:
     - numpy !=2.0.*
     - scipy
     - pyyaml
-    - setuptools >=61.0
 
 test:
   imports:
@@ -60,6 +62,9 @@ test:
     - pypolymlp-calc --help
     - pypolymlp-utils --help
     - pypolymlp-structure --help
+    - pypolymlp-sscha --help
+    - pypolymlp-sscha-structure --help
+    - pypolymlp-sscha-post --help
     - pip check
 
 about:
